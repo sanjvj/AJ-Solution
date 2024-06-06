@@ -1,16 +1,22 @@
 import { testimonials } from "../constants";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 export const Testimonials = () => {
   return (
     <div className="mt-20 tracking-wide">
-      <motion.h2 whileInView={{opacity:1,y:0}}
-            initial={{opacity:0,y:100}}
-            transition={{duration:0.5}} className="text-2xl sm:text-3xl lg:text-4xl text-center my-10 lg:my-10">
+      <motion.h2
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        className="text-2xl sm:text-3xl lg:text-4xl text-center my-10 lg:my-10"
+      >
         What People are saying
       </motion.h2>
-      <motion.div whileInView={{opacity:1,y:0}}
-            initial={{opacity:0,y:100}}
-            transition={{duration:0.5}} className="flex flex-wrap justify-center">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-wrap justify-center"
+      >
         {testimonials.map((testimonial, index) => (
           <div key={index} className="w-full lg:w-1/2 px-4 py-2">
             <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
@@ -35,4 +41,3 @@ export const Testimonials = () => {
     </div>
   );
 };
-
