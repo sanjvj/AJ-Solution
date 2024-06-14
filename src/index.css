@@ -9,7 +9,7 @@
     @apply relative;
   }
   .underline-animation::after {
-    @apply absolute content-[''] w-full h-0.5 bg-purple-400 left-0 bottom-[-5px] rounded-md scale-x-0 hover:scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-500;
+    @apply absolute content-[''] sm:w-full h-0.5 bg-purple-400 left-0 bottom-[-5px] rounded-md scale-x-0 hover:scale-x-100 origin-bottom-right hover:origin-bottom-left transition-transform duration-500;
   }
 }
 
