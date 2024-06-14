@@ -17,9 +17,7 @@ export function Topbar() {
         <Link to="/portfolio">
           <h1 className="underline-animation hover:text-white">Portfolio</h1>
         </Link>
-        <Link to="/jobs">
-          <h1 className="underline-animation hover:text-white">Jobs</h1>
-        </Link>
+        
         <Link to="/blog">
           <h1 className="underline-animation hover:text-white">Blog</h1>
         </Link>

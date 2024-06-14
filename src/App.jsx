@@ -5,7 +5,6 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
-import { Jobs } from "./pages/Jobs";
 import { Blog } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
 function App() {
@@ -19,7 +18,6 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/Jobs" element={<Jobs></Jobs>}></Route>
         <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/Portfolio" element={<Portfolio></Portfolio>}></Route>
         

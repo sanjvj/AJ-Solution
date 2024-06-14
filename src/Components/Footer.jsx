@@ -6,22 +6,32 @@ export function Footer() {
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-200 uppercase dark:text-white">
-                Company
+               Quick info
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className=" hover:underline">
-                    About
+                  Home
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Careers
+                    Web Development
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    Brand Center
+                  Mobile Application
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  Digital Marketing
+                  </a>
+                </li>
+                <li className="mb-4">
+                  <a href="#" className="hover:underline">
+                  E - commerce
                   </a>
                 </li>
                 <li className="mb-4">
@@ -37,13 +47,13 @@ export function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Discord Server
+                  <a href="https://www.instagram.com/ajsolutions_svks?igsh=eGQwdGZzZGR4YWt0" target="blank" className="hover:underline">
+                    Instagram
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
-                    Twitter
+                  <a href="https://www.linkedin.com/in/aj-solutions-0150ab285/" target="blank" className="hover:underline">
+                    LinkedIn
                   </a>
                 </li>
                 <li className="mb-4">
@@ -87,19 +97,19 @@ export function Footer() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    94433 69461
+                  90255 29802
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
-                    ajsolutions@gmail.com
+                  ajsolutionsmd@gmail.com
                   </a>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
                     {" "}
-                    27/1, Alagesan Rd, Nesavaalar Colony, Saibaba Colony,
-                    Coimbatore, Tamil Nadu 641043
+                    34, SOUTH CAR STREET Basement, Sivakasi, Virudhunagar, Tamil
+                    Nadu, 626123
                   </a>
                 </li>
               </ul>
