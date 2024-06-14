@@ -1,7 +1,8 @@
+import {motion} from 'framer-motion'
 export function Card(props) {
   return (
     <div className="">
-      <img
+      <motion.img whileHover={{scale:1.05}}
         className="rounded-xl cursor-pointer"
         src={props.thumbnail}
         alt="thumbnail"

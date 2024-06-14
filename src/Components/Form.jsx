@@ -42,11 +42,9 @@ export function Form() {
             transition={{ duration: 1 }}
             className="text-gray-400 font-medium text-sm"
           >
-            Choosing AJ Solutions Website Design Company in Coimbatore is the
-            smart decision to enhance your online presence. Our team of experts
-            specializes in crafting stunning and user-friendly websites that are
-            not only visually appealing but also perform exceptionally well in
-            search engine rankings.
+            Customer-Centric Approach: We prioritize your needs and work
+            collaboratively to ensure your success. Our solutions are designed
+            with your business goals in mind.
           </motion.p>
           <br></br>
           <motion.p
@@ -55,11 +53,9 @@ export function Form() {
             transition={{ duration: 1 }}
             className="text-gray-400 font-medium text-sm"
           >
-            We understand the critical role that web design plays in attracting
-            and retaining customers. That’s why we offer tailored solutions to
-            suit your unique business needs. Whether you’re a local business in
-            Coimbatore or aiming for a global audience, our services are
-            designed to help you stand out in the digital crowd.
+            Innovative Technology: We leverage the latest technologies and
+            industry best practices to deliver solutions that are not only
+            effective but also future-proof.
           </motion.p>
           <br></br>
           <motion.p
@@ -68,10 +64,9 @@ export function Form() {
             transition={{ duration: 1 }}
             className="text-gray-400 font-medium text-sm"
           >
-            Our comprehensive approach covers all aspects of web design and
-            development, ensuring your website is optimized for success. With a
-            focus on creativity and functionality, we create websites that leave
-            a lasting impression on your visitors.
+            Experienced Team: Our team of IT professionals brings a wealth of
+            knowledge and expertise to every project. We are committed to
+            delivering excellence in everything we do.
           </motion.p>
           <br></br>
           <motion.p
@@ -80,18 +75,22 @@ export function Form() {
             transition={{ duration: 1 }}
             className="text-gray-400 font-medium text-sm"
           >
-            If you’re ready to take your online presence to the next level, AJ
-            Solutions is your trusted partner. Contact us today for innovative
-            web design solutions.
+            Reliability and Security: Trust and security are at the core of our
+            services. We implement rigorous security measures to protect your
+            data and ensure the reliability of our solutions
           </motion.p>
           <br></br>{" "}
           <motion.p
             whileInView={{ opacity: 1, x: 0 }}
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
-            className="text-gray-300 font-semibold"
+            className="text-gray-400 font-medium text-sm"
           >
-            #1 Top Web Design Companies in Coimbatore
+            At AJ SOLUTIONS, we believe in the power of technology to transform
+            businesses. Our mission is to help you navigate the digital
+            landscape with confidence and achieve your strategic objectives.
+            Partner with us to unlock the full potential of your business
+            through innovative IT solutions.
           </motion.p>
         </div>
         <div className="col-span-12 lg:col-span-6">
@@ -226,12 +225,13 @@ export function Form() {
                 required
               ></textarea>
             </div>
-            <button
+            <motion.button
+              whileHover={{ scale: 1.1 }}
               className="w-full bg-purple-500 text-white rounded-md p-2 hover:bg-purple-700"
               type="submit"
             >
               Send Message
-            </button>
+            </motion.button>
           </motion.form>
         </div>
       </div>

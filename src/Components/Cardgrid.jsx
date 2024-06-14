@@ -31,7 +31,7 @@ const PHOTOS = [
   },
   {
     thumbnail: "thumbnail8.png",
-    title: "2D Animation",
+    title: "Cybersecurity", 
   },
 ];
 
@@ -44,9 +44,9 @@ export const Cardgrid = () => {
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"
     >
       {PHOTOS.map((photo) => (
-        <div>
+        <motion.div>
           <Card thumbnail={photo.thumbnail} title={photo.title}></Card>
-        </div>
+        </motion.div>
       ))}
     </motion.div>
   );

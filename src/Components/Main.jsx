@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Cardgrid } from "./Cardgrid";
-import { CardListGrid } from "./CardListGrid";
-import { Footer } from "./Footer";
 import { Form } from "./Form";
 import { Testimonials } from "./Testimonials";
 import { motion } from "framer-motion";
@@ -35,15 +33,9 @@ export function Main() {
         variants={container(0.5)}
         initial="hidden"
         animate="visible"
-        className=" text-zinc-400 font-light text-base"
+        className=" text-zinc-400 font-lg text-lg"
       >
-        Welcome to AJ Solutions, your premier destination for web design
-        services that enhance your digital presence and deliver results. Our
-        experienced team of web designers combines expertise and creativity to
-        craft visually stunning websites that captivate visitors and perform
-        exceptionally well in search engine rankings. We prioritize user
-        experience, staying attuned to modern design trends, and adhering to the
-        latest SEO guidelines.
+        Welcome to AJ Solutions
       </motion.p>
       <br></br>
       <motion.p
@@ -52,40 +44,57 @@ export function Main() {
         animate="visible"
         className="text-zinc-400 font-light text-base"
       >
-        {" "}
-        We offer comprehensive web design and development solutions, including
-        responsive designs that function seamlessly on all devices. Our
-        expertise extends beyond websites to encompass ecommerce platforms, CMS
-        integration, and custom web applications. We work closely with you,
-        maintaining open communication and transparency throughout the process,
-        to ensure your unique vision is realized.
+        At AJ Solutions, we specialize in a diverse range of digital services
+        tailored to meet the dynamic needs of modern businesses. With expertise
+        spanning multiple domains, we ensure your business not only survives but
+        thrives in today's competitive landscape. Our focus includes crafting
+        visually striking and functional websites through web designing, while
+        our UI design team creates intuitive interfaces that reflect your brand
+        identity.
       </motion.p>
       <br></br>
-      <br></br>
+    
       <motion.p
         variants={container(1.5)}
         initial="hidden"
         animate="visible"
         className="text-zinc-400 font-light text-base pb-4"
       >
-        At AJ Solutions, we’re committed to turning your ideas into a compelling
-        online presence that not only looks great but also functions flawlessly.
-        Explore our portfolio to see our past projects, and contact us to start
-        a conversation about your specific needs. We’re here to empower your
-        business and help you reach your digital goals, providing a website that
-        drives traffic, engages users, and converts leads into loyal customers.
-        Let’s take the first step toward building a powerful online presence
-        together.
+        In addition to strong web and UI design capabilities, we excel in
+        developing cohesive branding strategies to enhance and establish your
+        brand's market presence. Our expertise extends to building robust
+        ecommerce platforms that drive sales and deliver seamless shopping
+        experiences. Whether you need native or hybrid mobile applications, our
+        mobile app development team delivers solutions tailored to various
+        platforms and user preferences.
       </motion.p>
-      <br></br>
-      <motion.button
+      
+      <motion.p
         variants={container(2)}
         initial="hidden"
         animate="visible"
-        className="rounded-md bg-gradient-to-r from-red-500 to-purple-500 px-4 py-1 font-semibold"
+        className="text-zinc-400 font-light text-base pb-4"
       >
-        Know More
-      </motion.button>
+        Furthermore, we specialize in developing custom web applications that
+        streamline operations and enhance efficiency, along with implementing
+        strategic digital marketing campaigns to increase your online visibility
+        and engage your target audience effectively. At AJ Solutions, we
+        prioritize cybersecurity with robust solutions to safeguard your digital
+        assets. We also harness data analytics to provide actionable insights
+        that drive informed business decisions and foster growth.
+      </motion.p>
+
+      <motion.p
+        variants={container(2.5)}
+        initial="hidden"
+        animate="visible"
+        className="text-zinc-400 font-light text-base pb-4"
+      >
+        Committed to excellence through innovation and dedication, AJ Solutions
+        is your partner in achieving digital success. Contact us today to
+        explore how we can collaborate on campaigns to propel your business
+        forward and turn your vision into reality.
+      </motion.p>
 
       <hr className="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
 
@@ -122,7 +131,7 @@ export function Main() {
         className="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700"
       ></motion.hr>
 
-      <CardListGrid></CardListGrid>
+      
       <Testimonials></Testimonials>
       <FooterAnimation></FooterAnimation>
     </div>

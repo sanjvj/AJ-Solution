@@ -4,6 +4,7 @@ import { Topbar } from "../Components/Topbar";
 
 export function Home(){
     return <div>
+    
         <Topbar></Topbar>
         <Main></Main>
         <Footer></Footer>
