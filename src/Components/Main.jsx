@@ -101,7 +101,7 @@ export function Main() {
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
         className="text-5xl font-normal"
       >
         Our{" "}
@@ -111,9 +111,7 @@ export function Main() {
       </motion.h1>
       <br></br>
       <motion.p
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: 100 }}
-        transition={{ duration: 1 }}
+        
         className="text-center mb-10 text-gray-300 text-lg font-light"
       >
         With latest technology we are offering service such as Web Design, Web

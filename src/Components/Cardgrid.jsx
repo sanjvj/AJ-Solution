@@ -31,20 +31,22 @@ const PHOTOS = [
   },
   {
     thumbnail: "thumbnail8.png",
-    title: "Cybersecurity", 
+    title: "Cybersecurity",
   },
 ];
 
 export const Cardgrid = () => {
   return (
     <motion.div
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: 100 }}
-      transition={{ duration: 0.5 }}
+      
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2"
     >
       {PHOTOS.map((photo) => (
-        <motion.div>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 100 }}
+          transition={{ duration: 0.5 }}
+        >
           <Card thumbnail={photo.thumbnail} title={photo.title}></Card>
         </motion.div>
       ))}
