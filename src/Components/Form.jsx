@@ -1,9 +1,21 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import axios from 'axios';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 export function Form() {
   const [selectedService, setSelectedService] = useState("Web Development");
   const [isOpen, setIsOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    customerName: '',
+    whatsappNumber: '',
+    emailId: '',
+    city: '',
+    shortNote: ''
+  });
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const services = [
     "Web Design",
@@ -21,10 +33,46 @@ export function Form() {
     setIsOpen(false);
   };
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    const data = { ...formData, preferredService: selectedService };
+
+    try {
+      await axios.post('http://localhost:5000/send-email', data);
+      setIsSuccess(true);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error sending email', error);
+      setIsError(true);
+      setIsLoading(false);
+    }
+  };
+
+  const handleReset = () => {
+    setFormData({
+      customerName: '',
+      whatsappNumber: '',
+      emailId: '',
+      city: '',
+      shortNote: ''
+    });
+    setSelectedService("Web Development");
+    setIsSuccess(false);
+    setIsError(false);
+  };
+
   return (
     <div>
       <hr className="w-48 h-1 mx-auto my-4 bg-gray-400 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-
       <div className="grid grid-cols-12 gap-4 mt-8">
         <div className="col-span-12 lg:col-span-6 text-left">
           <motion.h1
@@ -99,6 +147,7 @@ export function Form() {
             initial={{ opacity: 0, x: 100 }}
             transition={{ duration: 1 }}
             className="border border-gray-300 rounded-lg p-6 shadow-lg"
+            onSubmit={handleSubmit}
           >
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <div className="grid grid-cols-1 gap-4 mb-4">
@@ -114,6 +163,8 @@ export function Form() {
                   type="text"
                   id="customerName"
                   name="customerName"
+                  value={formData.customerName}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -129,6 +180,8 @@ export function Form() {
                   type="text"
                   id="whatsappNumber"
                   name="whatsappNumber"
+                  value={formData.whatsappNumber}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -146,6 +199,8 @@ export function Form() {
                   type="email"
                   id="emailId"
                   name="emailId"
+                  value={formData.emailId}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -161,47 +216,51 @@ export function Form() {
                   type="text"
                   id="city"
                   name="city"
+                  value={formData.city}
+                  onChange={handleChange}
                   required
                 />
               </div>
             </motion.div>
-            <div className="mb-4 relative">
+            <div className="mb-4">
+              <label
+                className="block text-sm font-medium mb-2"
+                htmlFor="shortNote"
+              >
+                Short Note
+              </label>
+              <textarea
+                className="w-full text-black border bg-gray-200 border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                id="shortNote"
+                name="shortNote"
+                rows="4"
+                value={formData.shortNote}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
+            <div className="relative mb-4">
               <label
                 className="block text-sm font-medium mb-2"
                 htmlFor="preferredService"
               >
-                Choose Your Preferred Service
+                Preferred Service
               </label>
-              <div
-                className="grid grid-cols-4 gap-16 w-full border text-black bg-gray-200 border-gray-300 rounded-md p-2 cursor-pointer focus:outline-none focus:ring-2 focus:ring-purple-500"
+              <button
+                type="button"
+                className="w-full flex justify-between text-left text-black border bg-gray-200 border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
                 onClick={() => setIsOpen(!isOpen)}
               >
-                <div className="col-span-3">{selectedService} </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                  />
-                </svg>
-              </div>
+                {selectedService}
+                <RiArrowDropDownLine size={30}></RiArrowDropDownLine>
+              </button>
+             
               {isOpen && (
-                <ul className="absolute w-full border  border-gray-300 rounded-md mt-1 bg-black shadow-lg">
+                <ul className="absolute left-0 w-full bg-gray-700 border border-gray-700 rounded-md mt-1 z-10">
                   {services.map((service) => (
                     <li
                       key={service}
-                      className={`p-2  hover:bg-purple-500 hover:text-white cursor-pointer ${
-                        service === selectedService
-                          ? "bg-purple-500 text-white"
-                          : ""
-                      }`}
+                      className="p-2 cursor-pointer hover:bg-gray-100 hover:text-black"
                       onClick={() => handleSelect(service)}
                     >
                       {service}
@@ -210,32 +269,24 @@ export function Form() {
                 </ul>
               )}
             </div>
-            <div className="mb-4">
-              <label
-                className="block  text-sm font-medium mb-2"
-                htmlFor="shortNote"
-              >
-                Short Note About What You Require
-              </label>
-              <textarea
-                className="w-full text-black   border bg-gray-300 border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
-                id="shortNote"
-                name="shortNote"
-                rows="4"
-                required
-              ></textarea>
-            </div>
             <motion.button
-              whileHover={{ scale: 1.1 }}
-              className="w-full bg-purple-500 text-white rounded-md p-2 hover:bg-purple-700"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               type="submit"
+              className="w-full bg-purple-500 text-white p-2 rounded-md"
+              disabled={isLoading}
             >
-              Send Message
+              {isLoading ? 'Submitting...' : 'Submit'}
             </motion.button>
+            {isSuccess && (
+              <p className="text-green-600 mt-2">Form submitted successfully!</p>
+            )}
+            {isError && (
+              <p className="text-red-600 mt-2">Error submitting form. Please try again later.</p>
+            )}
           </motion.form>
         </div>
       </div>
-      <br></br>
     </div>
   );
 }

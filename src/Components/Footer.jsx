@@ -106,7 +106,7 @@ export function Footer() {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="https://www.google.com/maps/place/34,+S+Car+Rd,+Parasakthi+Colony,+Sivakasi,+Tamil+Nadu+626123/@9.4492935,77.795973,17z/data=!4m6!3m5!1s0x3b06cee391f85515:0xf563f0e2e597fc63!8m2!3d9.4493723!4d77.7959537!16s%2Fg%2F11p0_g3gyc?entry=ttu" className="hover:underline">
+                  <a href="https://www.google.com/maps/place/34,+S+Car+Rd,+Parasakthi+Colony,+Sivakasi,+Tamil+Nadu+626123/@9.4492935,77.795973,17z/data=!4m6!3m5!1s0x3b06cee391f85515:0xf563f0e2e597fc63!8m2!3d9.4493723!4d77.7959537!16s%2Fg%2F11p0_g3gyc?entry=ttu" target="blank" className="hover:underline">
                     {" "}
                     34, SOUTH CAR STREET Basement, Sivakasi, Virudhunagar, Tamil
                     Nadu, 626123
