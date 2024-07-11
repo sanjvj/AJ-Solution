@@ -7,6 +7,8 @@ import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
 import { Blog } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
+import ServicePage from "./pages/ServicePage";
+import Mobile from "./pages/Mobile";
 function App() {
   return (
     <>
@@ -21,6 +23,9 @@ function App() {
         <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/Portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="/services/web" element={<ServicePage></ServicePage>}></Route>
+        <Route path="/services/mobile" element={<Mobile></Mobile>}></Route>
+
       </Routes>
     </>
   );

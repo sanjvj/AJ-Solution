@@ -13,12 +13,12 @@ export function ServiceHero() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-justify">
         <motion.h1 variants={container(0.5)}
         initial="hidden"
-        animate="visible" className="text-zinc-200 font-bold text-xl">Welcome to Our Services</motion.h1>
+        animate="visible" className="text-zinc-200 font-bold text-2xl">Welcome to Our Services</motion.h1>
         <motion.p
           variants={container(0.5)}
           initial="hidden"
           animate="visible"
-          className="text-zinc-400 font-light text-base"
+          className="text-zinc-400 font-light text-lg"
         >
           Explore our wide range of digital solutions designed to help your
           business thrive online. From cutting-edge web development to robust
@@ -29,10 +29,10 @@ export function ServiceHero() {
 
         <motion.h1 variants={container(1)}
         initial="hidden"
-        animate="visible" className="text-zinc-200 font-bold text-xl">Why Choose Us?</motion.h1>
+        animate="visible" className="text-zinc-200 font-bold text-2xl">Why Choose Us?</motion.h1>
         <motion.p variants={container(1)}
         initial="hidden"
-        animate="visible" className="text-zinc-400 font-light text-base">
+        animate="visible" className="text-zinc-400 font-light text-lg">
           At AJ Solution, we combine technical expertise with creative
           innovation to deliver exceptional digital solutions. Our team of
           professionals is committed to excellence, ensuring that your business
@@ -42,11 +42,11 @@ export function ServiceHero() {
         <br></br>
         <motion.h1 variants={container(1.5)}
         initial="hidden"
-        animate="visible" className="text-zinc-200 font-bold text-xl">Proven Results</motion.h1>
+        animate="visible" className="text-zinc-200 font-bold text-2xl">Proven Results</motion.h1>
 
         <motion.p variants={container(1.5)}
         initial="hidden"
-        animate="visible" className="text-zinc-400 font-light text-base">
+        animate="visible" className="text-zinc-400 font-light text-lg">
           We take pride in our track record of successful projects. Our clients
           have seen significant improvements in their online presence, security,
           and overall business performance.
@@ -55,10 +55,10 @@ export function ServiceHero() {
        <br></br> 
        <motion.h1 variants={container(2)}
         initial="hidden"
-        animate="visible" className="text-zinc-200 font-bold text-xl">Explore Our Services</motion.h1>
+        animate="visible" className="text-zinc-200 font-bold text-2xl">Explore Our Services</motion.h1>
         <motion.p variants={container(2)}
         initial="hidden"
-        animate="visible" className="text-zinc-400 font-light text-base">
+        animate="visible" className="text-zinc-400 font-light text-lg">
           Scroll down to discover how our expert team can help elevate your
           business with our comprehensive range of services.
         </motion.p><br></br><br></br><br></br>

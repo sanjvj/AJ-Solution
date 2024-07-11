@@ -23,7 +23,7 @@ export function Socials(){
             
             <div className="flex flex-wrap items-center justify-center gap-5">
                 <motion.div 
-                variants={iconVariants(1.5)}
+                variants={iconVariants(2)}
                 initial="initial"
                 animate="animate"
                  className="rounded-2xl border-4 border-neutral-800 p-4">
@@ -32,26 +32,13 @@ export function Socials(){
                     <RiInstagramLine className="text-6xl text-pink-600"></RiInstagramLine></a>
                 </motion.div>
                 <motion.div 
-                variants={iconVariants(3)}
+                variants={iconVariants(4)}
                 initial = "initial"
                 animate = "animate"
                  className="rounded-2xl border-4 border-neutral-800 p-4"><a href="https://www.linkedin.com/in/aj-solutions-0150ab285/" target="blank">
                     <RiLinkedinBoxLine className="text-6xl text-cyan-600"></RiLinkedinBoxLine></a>
                 </motion.div>
-                <motion.div
-                variants={iconVariants(2)}
-                initial = "initial"
-                animate = "animate"
-                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiFacebookCircleFill className="text-6xl text-blue-600"></RiFacebookCircleFill>
-                </motion.div>
-                <motion.div
-                variants={iconVariants(1.5)}
-                initial = "initial"
-                animate = "animate"
-                 className="rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiTwitterXFill className="text-6xl"></RiTwitterXFill>
-                </motion.div>
+                
             </div>
         </div>
     </div>

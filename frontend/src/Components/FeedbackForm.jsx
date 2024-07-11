@@ -50,7 +50,7 @@ export function Feedbackform() {
 
   return (
     <div>
-      <h1 className="max-w-4xl mx-auto text-center font-semibold text-3xl  text-white mt-16 md:text-4xl md:leading-normal ">
+      <h1 className="max-w-4xl mx-auto text-center font-semibold text-3xl  text-white mt-32 md:text-4xl md:leading-normal ">
         Leave your Feedback 
       </h1>
       <div className="flex items-center justify-center min-h-screen">

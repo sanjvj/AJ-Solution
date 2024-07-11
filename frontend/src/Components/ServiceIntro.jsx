@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 export function ServiceIntro(){
     return <div>
-        <div className=" text-center flex flex-col items-center justify-center mb-5">
+        <div className=" text-center flex flex-col items-center justify-center mb-10 mt-16">
         <motion.h1
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

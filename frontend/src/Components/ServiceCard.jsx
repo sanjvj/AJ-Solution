@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 export function ServiceCard() {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <div className="flex min-h-screen items-center justify-center">
+      <div className="flex min-h-screen items-center justify-center mt-32">
         <motion.div
           variants={{
             hidden: { opacity: 0 },
@@ -41,7 +45,7 @@ export function ServiceCard() {
                 are optimized for performance and user experience. Our web
                 solutions help you establish a strong online presence.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("web")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -65,7 +69,7 @@ export function ServiceCard() {
                 needs of your business. From mobile apps to enterprise systems,
                 we deliver robust and scalable software products.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("software")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -90,7 +94,7 @@ export function ServiceCard() {
                 security infrastructure to safeguard your business against cyber
                 threats.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("cyber")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -114,7 +118,7 @@ export function ServiceCard() {
                 needs of your business. From mobile apps to enterprise systems,
                 we deliver robust and scalable software products.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("mobile")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -139,7 +143,7 @@ export function ServiceCard() {
                 with you to understand your goals and design solutions that
                 align with your vision.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("consulting")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -163,7 +167,7 @@ export function ServiceCard() {
                 services help you make informed decisions and drive business
                 growth through data-driven strategies.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("analytics")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -186,7 +190,7 @@ export function ServiceCard() {
                 Our web design services focus on creating visually stunning
                 designs that reflect your ideas
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("design")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -209,7 +213,7 @@ export function ServiceCard() {
                 Boost your online visibility with our comprehensive SEO
                 services.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("digital")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
@@ -233,7 +237,7 @@ export function ServiceCard() {
                 build secure, scalable, and user-friendly online stores that
                 offer a seamless shopping experience.
               </p>
-              <button className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+              <button onClick={()=>{navigate("ecommerce")}} className="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
                 See More
               </button>
             </div>
