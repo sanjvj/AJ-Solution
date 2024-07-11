@@ -9,6 +9,8 @@ import { Blog } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
 import ServicePage from "./pages/ServicePage";
 import Mobile from "./pages/Mobile";
+import SoftwareDevelopmentpage from "./pages/SoftwareDevelopmentpage";
+import CyberSecurityPage from "./pages/CyberSecurityPage";
 function App() {
   return (
     <>
@@ -25,6 +27,10 @@ function App() {
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/services/web" element={<ServicePage></ServicePage>}></Route>
         <Route path="/services/mobile" element={<Mobile></Mobile>}></Route>
+        <Route path="/services/cyber" element={<CyberSecurityPage></CyberSecurityPage>}></Route>
+        <Route path="/services/software" element={<SoftwareDevelopmentpage></SoftwareDevelopmentpage>}></Route>
+
+
 
       </Routes>
     </>
