@@ -11,6 +11,8 @@ import ServicePage from "./pages/ServicePage";
 import Mobile from "./pages/Mobile";
 import SoftwareDevelopmentpage from "./pages/SoftwareDevelopmentpage";
 import CyberSecurityPage from "./pages/CyberSecurityPage";
+import ITConsultingPage from "./pages/ITConsultingPage";
+import DataAnalyticsPage from "./pages/DataConsulting";
 function App() {
   return (
     <>
@@ -29,6 +31,8 @@ function App() {
         <Route path="/services/mobile" element={<Mobile></Mobile>}></Route>
         <Route path="/services/cyber" element={<CyberSecurityPage></CyberSecurityPage>}></Route>
         <Route path="/services/software" element={<SoftwareDevelopmentpage></SoftwareDevelopmentpage>}></Route>
+        <Route path="/services/consulting" element={<ITConsultingPage></ITConsultingPage>}></Route>
+        <Route path="/services/analytics" element={<DataAnalyticsPage></DataAnalyticsPage>}></Route>
 
 
 
