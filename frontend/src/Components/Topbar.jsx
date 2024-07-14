@@ -43,12 +43,7 @@ export function Topbar() {
           >
             Portfolio
           </Link>
-          <Link
-            to="/blog"
-            className="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium underline-animation"
-          >
-            Blog
-          </Link>
+          
           <Link
             to="/contact"
             className="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium underline-animation"

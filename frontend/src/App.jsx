@@ -5,7 +5,6 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
-import { Blog } from "./pages/Blog";
 import { Portfolio } from "./pages/Portfolio";
 import ServicePage from "./pages/ServicePage";
 import Mobile from "./pages/Mobile";
@@ -13,6 +12,7 @@ import SoftwareDevelopmentpage from "./pages/SoftwareDevelopmentpage";
 import CyberSecurityPage from "./pages/CyberSecurityPage";
 import ITConsultingPage from "./pages/ITConsultingPage";
 import DataAnalyticsPage from "./pages/DataConsulting";
+import EcommercePage from "./pages/EcommercePage";
 function App() {
   return (
     <>
@@ -24,7 +24,6 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/Portfolio" element={<Portfolio></Portfolio>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/services/web" element={<ServicePage></ServicePage>}></Route>
@@ -33,9 +32,7 @@ function App() {
         <Route path="/services/software" element={<SoftwareDevelopmentpage></SoftwareDevelopmentpage>}></Route>
         <Route path="/services/consulting" element={<ITConsultingPage></ITConsultingPage>}></Route>
         <Route path="/services/analytics" element={<DataAnalyticsPage></DataAnalyticsPage>}></Route>
-
-
-
+        <Route path="/services/ecommerce" element={<EcommercePage></EcommercePage>}></Route>
       </Routes>
     </>
   );
