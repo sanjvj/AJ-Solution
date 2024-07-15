@@ -3,12 +3,10 @@
 import React from "react";
 import { Footer } from "../Components/Footer";
 import { FooterAnimation } from "../Components/FooterAnimation";
-import { Topbar } from "../Components/Topbar";
 
 const EcommercePage = () => {
   return (
     <div>
-    <Topbar />
     
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
       
