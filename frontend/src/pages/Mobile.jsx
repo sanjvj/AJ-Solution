@@ -3,12 +3,10 @@
 import React from "react";
 import { Footer } from "../Components/Footer";
 import { FooterAnimation } from "../Components/FooterAnimation";
-import { Topbar } from "../Components/Topbar";
 
 const Mobile = () => {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-      <Topbar />
       <h2 className="text-zinc-400 font-lg text-2xl mt-20">
         Mobile App Development Services
       </h2>
