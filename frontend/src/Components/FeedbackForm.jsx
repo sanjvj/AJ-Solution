@@ -27,7 +27,7 @@ export function Feedbackform() {
     const data = { ...formData };
 
     try {
-      await axios.post("http://localhost:5000/send-feedback", data);
+      await axios.post("https://aj-solution-backend.onrender.com/send-feedback", data);
       setIsSuccess(true);
     } catch (error) {
       console.error("Error sending feedback", error);

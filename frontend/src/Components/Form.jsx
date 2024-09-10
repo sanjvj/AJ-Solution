@@ -46,7 +46,7 @@ export function Form() {
     const data = { ...formData, preferredService: selectedService };
 
     try {
-      await axios.post('http://localhost:5000/send-email', data);
+      await axios.post('https://aj-solution-backend.onrender.com/send-email', data);
       setIsSuccess(true);
       setIsLoading(false);
     } catch (error) {
