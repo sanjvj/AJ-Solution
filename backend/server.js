@@ -23,7 +23,7 @@ app.post('/send-email', (req, res) => {
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: 'sanjaysurya3012.work@gmail.com',
+    to: 'ajsolutionsmd@gmail.com',
     subject: 'A new Customer is reaching you out',
     text: `You have a new form submission requesting for service:
       Customer Name: ${customerName}
