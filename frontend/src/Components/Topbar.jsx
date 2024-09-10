@@ -37,12 +37,12 @@ export function Topbar() {
           >
             Services
           </Link>
-          <Link
+          {/* <Link
             to="/portfolio"
             className="text-gray-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium underline-animation"
           >
             Portfolio
-          </Link>
+          </Link> */}
           
           <Link
             to="/contact"
@@ -117,12 +117,12 @@ export function Topbar() {
             >
               Services
             </Link>
-            <Link
+            {/* <Link
               to="/portfolio"
               className="text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium underline-animation"
             >
               Portfolio
-            </Link>
+            </Link> */}
             <Link
               to="/blog"
               className="text-gray-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium underline-animation"

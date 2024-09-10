@@ -5,7 +5,7 @@ import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Services } from "./pages/Services";
 import { Contact } from "./pages/Contact";
-import { Portfolio } from "./pages/Portfolio";
+// import { Portfolio } from "./pages/Portfolio";
 import ServicePage from "./pages/ServicePage";
 import Mobile from "./pages/Mobile";
 import SoftwareDevelopmentpage from "./pages/SoftwareDevelopmentpage";
@@ -24,7 +24,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
-        <Route path="/Portfolio" element={<Portfolio></Portfolio>}></Route>
+        {/* <Route path="/Portfolio" element={<Portfolio></Portfolio>}></Route> */}
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/services/web" element={<ServicePage></ServicePage>}></Route>
         <Route path="/services/mobile" element={<Mobile></Mobile>}></Route>
